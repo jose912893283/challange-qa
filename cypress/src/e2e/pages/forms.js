@@ -93,7 +93,7 @@ export default class FormsPage extends BasePage {
     this.userNumber.type(formData.mobileNumber);
     this.dateOfBirthInput.type(formData.dateOfBirth + '{enter}');
     this.subjectsInput.type(formData.subject + '{enter}');
-    this.selectHobby(formData.hobby.numberId);
+    this.selectHobby(formData.hobby.id);
     this.currentAddress.type(formData.address);
     this.selectState(formData.state);
     this.selectCity(formData.city);
