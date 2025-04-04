@@ -16,11 +16,9 @@ describe('Practice Form Tests', () => {
       numberId: 1,
       name: 'Sports',
     },
-    filePath: 'path/to/file.jpg',
     address: '123 Main St',
     state: 'NCR',
     city: 'Delhi'
-
   };
 
   beforeEach(() => {
