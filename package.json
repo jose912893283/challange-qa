@@ -8,7 +8,8 @@
     "cypress:open": "cypress open --config-file cypress.config.js --env configFile=dev-environment",
     "cypress:run:all": "cypress run --browser chrome --headless --spec 'cypress/src/e2e/ui/*.cy.js' --config-file cypress.config.js --env configFile=dev-environment",
     "allure:clean": "rm -rf ./allure-results ./allure-report",
-    "allure:generate": "allure generate --clean && allure serve"
+    "allure:generate": "allure generate --clean",
+    "allure:generate-and-open": "npm run allure:generate && npm run allure:open"
   },
   "author": "",
   "license": "ISC",
