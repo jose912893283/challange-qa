@@ -1,0 +1,19 @@
+{
+  "name": "challange",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open --config-file cypress.config.js --env configFile=dev-environment",
+    "cypress:run:all": "cypress run --browser chrome --headless --spec 'cypress/src/e2e/ui/*.cy.js' --config-file cypress.config.js --env configFile=dev-environment",
+    "allure:clean": "rm -rf ./allure-results ./allure-report",
+    "allure:generate": "allure generate --clean && allure serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "allure-cypress": "^3.2.1",
+    "cypress": "13.7"
+  }
+}
