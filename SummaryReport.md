@@ -13,6 +13,6 @@ Cypress was the tool/framework for this challenge because of its speed, automati
 - Integrated the Allure reporter for enhanced test reporting
 
 ## Challenges & Insights
-One challenge was handling assertions cause the sofware under test y flaky takes some time to load the page, but i resolved this extending the timeout for assertions pageLoad inside the configuration.
+One challenge was handling assertions cause the sofware under test y flaky takes some time to load the page, but i resolved this extending the timeout for assertions and pageLoad, also adding retries inside the configuration
 
  
