@@ -32,12 +32,28 @@ To run the tests, you have two options:
 
 This project uses Allure for generating detailed test reports. To generate and view the report:
 
-1. Make sure you have executed the tests using one of the above commands.
+# OPTION 1: Generate the report only (does NOT open it)
+  Recommended for CI/CD pipelines or when uploading the report
+   as an artifact (non-interactive environments).
 
-2. Generate the Allure report:
-   ```
-   npm run allure:generate
-   ```
+# Command:
+  npm run allure:generate
+
+# You can then open the report manually with:
+# npm run allure:open
+# or by opening the generated file: allure-report/index.html
+
+#  OPTION 2: Generate and open the report locally
+  Use this option only for local testing (NOT CI).
+  This will generate the report AND start a local web server
+  to open it in your browser.
+ 
+# Command:
+    npm run allure:generate-and-open
+
+# ⚠️ WARNING: This command will hang in CI workflows,
+# because the server keeps running until manually closed.
+
 The generated report will include:
 - Test execution results
 - Summary of pass/fail statuses
