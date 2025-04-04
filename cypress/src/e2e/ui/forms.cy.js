@@ -13,7 +13,7 @@ describe('Practice Form Tests', () => {
     dateOfBirth: '03 Apr 2025',
     subject: 'Maths',
     hobby: {
-      numberId: 1,
+      id: 1,
       name: 'Sports',
     },
     address: '123 Main St',
